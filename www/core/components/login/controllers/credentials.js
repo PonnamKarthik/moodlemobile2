@@ -51,6 +51,7 @@ angular.module('mm.core.login')
             $scope.siteurl = result.siteurl;
 
             siteConfig = result.config;
+            console.log(result.config);
             treatSiteConfig(result.config);
 
             if (result && result.warning) {
